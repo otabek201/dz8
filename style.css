@@ -1,80 +1,91 @@
- @media (max-width: 900px) {
-     .box {
-         h1 {
-             font-size: 15px;
-         }
-     }
- }
+.kartinka {
+    width: 50px;
+}
 
- @media (max-with:900px) {
-     .kartinka2 {
-         display: block;
-     }
- }
 
- .kartinka {
-     width: 50px;
- }
 
- body {
-     background-image: url(https://kartinki.pics/pics/uploads/posts/2022-08/thumbs/1660857421_3-kartinkin-net-p-fon-dlya-prezentatsii-puzirki-krasivo-3.jpg);
-     background-repeat: no-repeat;
-     background-size: cover;
-     color: white;
- }
+body {
+    background-image: url(https://kartinki.pics/pics/uploads/posts/2022-08/thumbs/1660857421_3-kartinkin-net-p-fon-dlya-prezentatsii-puzirki-krasivo-3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    height: 100dvh;
 
- .header {
-     width: 80%;
-     height: 60px;
-     margin: 0 auto;
-     justify-content: space-between;
-     display: flex;
-     align-items: center;
- }
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
- .menu {
-     display: flex;
-     gap: 10px;
-     justify-content: space-between;
- }
+    
+}
 
- h1 {
-     font-size: 58px;
-     font-family: 'Times New Roman', Times, serif;
- }
+.header {
+    width: 80%;
+   
+    margin: 0 auto;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
 
- .kartinka2 {
-     width: 30%;
-     animation: anim1 1s ease;
- }
+    @media (max-width: 600px) {
+        flex-direction: column;
+    }
+}
 
- .wrapper {
-     display: flex;
-     align-items: center;
-     justify-content: center;
-     gap: 100px;
-     animation: anim1 1s ease;
- }
+.menu {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+}
 
- .knopka {
-     background-color: black;
-     color: white;
-     padding: 15px 30px;
-     border-radius: 15px;
-     animation: anim1 1s ease;
- }
+h1 {
+    font-size: 58px;
+    
 
- .qwerty {
-     background-color: pink;
- }
+    @media (max-width: 600px) {
+        font-size: 40px;
+    }
+}
 
- @keyframes anim1 {
-     from {
-         transform: translateY(60px);
-     }
+.kartinka2 {
+    width: 30%;
+    animation: anim1 1s ease;
 
-     to {
-         transform: translateY(0);
-     }
+    @media (max-width: 600px) {
+        flex-direction: column;
+        width: 60%;
+    }
+}
 
- }
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    animation: anim1 1s ease;
+
+    @media (max-width: 600px) {
+        flex-direction: column;
+    }
+}
+
+.knopka {
+    background-color: black;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 15px;
+    animation: anim1 1s ease;
+}
+
+.qwerty {
+    background-color: pink;
+}
+
+@keyframes anim1 {
+    from {
+        transform: translateY(60px);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+
+}
